@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.devexchanges.scrollingtextview.MainActivity">
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/ticker_usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#243D99"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:ticker_textColor="@android:color/white"
+        app:ticker_textSize="20sp" />
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/ticker_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ticker_usd"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:ticker_textColor="@android:color/white"
+        app:ticker_textSize="20sp" />
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/ticker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticker_usd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#0099ff"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:ticker_textColor="@android:color/white"
+        app:ticker_textSize="20sp" />
+
+</RelativeLayout>
