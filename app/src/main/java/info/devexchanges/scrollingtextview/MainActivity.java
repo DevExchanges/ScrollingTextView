@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         //Default data
         tickerView.setText("2000");
         tickerUSD.setText("$5,200");
+        tickerText.setText("ABcDef");
         setRandomText();
         setRandomCurrency();
     }
